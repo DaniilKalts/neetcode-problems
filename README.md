@@ -3,7 +3,7 @@
 ## 1. Arrays & Hashing
 ### Easy
 - [X] Contains Duplicate
-- [ ] Valid Anagram
+- [X] Valid Anagram
 - [ ] Two Sum
 ### Medium
 - [ ] Group Anagrams
