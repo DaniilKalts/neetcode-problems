@@ -2,7 +2,7 @@
 
 ## 1. Arrays & Hashing
 ### Easy
-- [ ] Contains Duplicate
+- [X] Contains Duplicate
 - [ ] Valid Anagram
 - [ ] Two Sum
 ### Medium
