@@ -4,7 +4,7 @@
 ### Easy
 - [X] Contains Duplicate
 - [X] Valid Anagram
-- [ ] Two Sum
+- [X] Two Sum
 ### Medium
 - [ ] Group Anagrams
 - [ ] Top K Frequent Elements
