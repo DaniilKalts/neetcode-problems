@@ -10,7 +10,7 @@ import (
 // 1. Brute Force
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
-func solution_1(nums []int, target int) []int {
+func TwoSumSolution1(nums []int, target int) []int {
 	n := len(nums)
 
 	for i := 0; i < n; i++ {
@@ -27,7 +27,7 @@ func solution_1(nums []int, target int) []int {
 // 2. Sorting
 // Time Complexity: O(n * log(n))
 // Space Complexity: O(1) or O(n) depending on the sorting algorithm
-func solution_2(nums []int, target int) []int {
+func TwoSumSolution2(nums []int, target int) []int {
 	n := len(nums)
 	items := make([][2]int, n)
 
@@ -60,7 +60,7 @@ func solution_2(nums []int, target int) []int {
 // 3. Hash Map
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-func solution_3(nums []int, target int) []int {
+func TwoSumSolution3(nums []int, target int) []int {
 	items := make(map[int]int)
 
 	for i, num := range nums {
@@ -80,7 +80,7 @@ func solution_3(nums []int, target int) []int {
 // 4. Hash Map (One Pass)
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-func solution_4(nums []int, target int) []int {
+func TwoSumSolution4(nums []int, target int) []int {
 	items := make(map[int]int)
 
 	for i, num := range nums {

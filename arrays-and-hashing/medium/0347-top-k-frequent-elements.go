@@ -8,7 +8,7 @@ import "sort"
 // 1. Sorting
 // Time Complexity: O(n * log(n))
 // Space Complexity: O(n)
-func solution_1(nums []int, k int) []int {
+func TopKFrequentElementsSolution1(nums []int, k int) []int {
 	counter := make(map[int]int)
 	for _, num := range nums {
 		counter[num]++
@@ -19,9 +19,11 @@ func solution_1(nums []int, k int) []int {
 		pairs = append(pairs, [2]int{num, count})
 	}
 
-	sort.Slice(pairs, func(i, j int) bool {
-		return pairs[i][1] > pairs[j][1]
-	})
+	sort.Slice(
+		pairs, func(i, j int) bool {
+			return pairs[i][1] > pairs[j][1]
+		},
+	)
 
 	var res []int
 	for i := range pairs {
@@ -37,17 +39,19 @@ func solution_1(nums []int, k int) []int {
 // 2. Min-Heap
 // Time Complexity: O(n * log(k))
 // Space Complexity: O(n + k)
-func solution_2(nums []int, k int) []int {
+func TopKFrequentElementsSolution2(nums []int, k int) []int {
 	counter := make(map[int]int)
 	for _, num := range nums {
 		counter[num]++
 	}
 
-	heap := priorityqueue.NewWith(func(a, b interface{}) int {
-		countA := a.([2]int)[1]
-		countB := b.([2]int)[1]
-		return utils.IntComparator(countA, countB)
-	})
+	heap := priorityqueue.NewWith(
+		func(a, b interface{}) int {
+			countA := a.([2]int)[1]
+			countB := b.([2]int)[1]
+			return utils.IntComparator(countA, countB)
+		},
+	)
 
 	for num, count := range counter {
 		heap.Enqueue([2]int{num, count})
@@ -68,7 +72,7 @@ func solution_2(nums []int, k int) []int {
 // 3. Bucket Sort
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-func solution_3(nums []int, k int) []int {
+func TopKFrequentElementsSolution3(nums []int, k int) []int {
 	counter := make(map[int]int)
 	for _, num := range nums {
 		counter[num]++

@@ -8,7 +8,7 @@ import "sort"
 // 1. Sorting
 // Time Complexity: O(m * n * log(n))
 // Space Complexity: O(m * n)
-func solution_1(strs []string) [][]string {
+func GroupAnagramSolution1(strs []string) [][]string {
 	hashMap := make(map[string][]string)
 	for _, str := range strs {
 		sortedStr := sortString(str)
@@ -26,9 +26,11 @@ func solution_1(strs []string) [][]string {
 func sortString(str string) string {
 	chars := []rune(str)
 
-	sort.Slice(chars, func(i, j int) bool {
-		return chars[i] < chars[j]
-	})
+	sort.Slice(
+		chars, func(i, j int) bool {
+			return chars[i] < chars[j]
+		},
+	)
 
 	return string(chars)
 }
@@ -36,7 +38,7 @@ func sortString(str string) string {
 // 2. Hash Table
 // Time Complexity: O(n * m)
 // Space Complexity: O(n * m)
-func solution_2(strs []string) [][]string {
+func GroupAnagramSolution2(strs []string) [][]string {
 	hashMap := make(map[[26]int][]string)
 	for _, str := range strs {
 		var counter [26]int

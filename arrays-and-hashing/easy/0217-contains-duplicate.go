@@ -8,7 +8,7 @@ import "sort"
 // 1. Brute Force
 // Time Complexity: O(n^2)
 // Space Complexity: O(1)
-func solution1(nums []int) bool {
+func ContainsDuplicateSolution1(nums []int) bool {
 	n := len(nums)
 
 	for i := 0; i < n-1; i++ {
@@ -25,7 +25,7 @@ func solution1(nums []int) bool {
 // 2. Sorting
 // Time Complexity: O(n * log(n))
 // Space Complexity: O(1) or O(n) depending on the sorting algorithm
-func solution2(nums []int) bool {
+func ContainsDuplicateSolution2(nums []int) bool {
 	sort.Ints(nums)
 	n := len(nums)
 
@@ -41,7 +41,7 @@ func solution2(nums []int) bool {
 // 3. Hash Set
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-func solution3(nums []int) bool {
+func ContainsDuplicateSolution3(nums []int) bool {
 	seen := make(map[int]bool)
 
 	for _, num := range nums {
@@ -57,7 +57,7 @@ func solution3(nums []int) bool {
 // 4. Hash Set Length
 // Time Complexity: O(n)
 // Space Complexity: O(n)
-func solution4(nums []int) bool {
+func ContainsDuplicateSolution4(nums []int) bool {
 	seen := make(map[int]struct{})
 
 	for _, num := range nums {
