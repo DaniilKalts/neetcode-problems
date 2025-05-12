@@ -1,5 +1,5 @@
 // 0001.Two Sum
-// https://leetcode.com/problems/two-sum/description/
+// https://neetcode.io/problems/two-integer-sum
 
 package easy
 
@@ -35,9 +35,11 @@ func solution_2(nums []int, target int) []int {
 		items[i] = [2]int{i, num}
 	}
 
-	sort.Slice(items, func(i, j int) bool {
-		return items[i][1] < items[j][1]
-	})
+	sort.Slice(
+		items, func(i, j int) bool {
+			return items[i][1] < items[j][1]
+		},
+	)
 
 	l := 0
 	r := n - 1

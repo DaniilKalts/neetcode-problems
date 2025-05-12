@@ -1,5 +1,5 @@
 // 0242. Valid Anagram
-// https://leetcode.com/problems/valid-anagram/description/
+// https://neetcode.io/problems/is-anagram
 
 package easy
 

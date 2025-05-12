@@ -1,7 +1,7 @@
 // 0347. Top K Frequent Elements
-// https://leetcode.com/problems/top-k-frequent-elements/description/
+// https://neetcode.io/problems/top-k-elements-in-list
 
-package easy
+package medium
 
 import "sort"
 

@@ -1,7 +1,7 @@
 // 0049. Group Anagrams
-// https://leetcode.com/problems/group-anagrams/description/
+// https://neetcode.io/problems/anagram-groups
 
-package easy
+package medium
 
 import "sort"
 
