@@ -3,7 +3,12 @@
 
 package medium
 
-import "sort"
+import (
+	"sort"
+
+	"github.com/emirpasic/gods/queues/priorityqueue"
+	"github.com/emirpasic/gods/utils"
+)
 
 // 1. Sorting
 // Time Complexity: O(n * log(n))
