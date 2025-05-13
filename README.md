@@ -6,12 +6,11 @@
 - [X] Valid Anagram
 - [X] Two Sum
 ### Medium
-- [ ] Group Anagrams
-- [ ] Top K Frequent Elements
+- [X] Group Anagrams
+- [X] Top K Frequent Elements
+- [X] Encode and Decode Strings
 - [ ] Product of Array Except Self
 - [ ] Valid Sudoku
-### Hard
-- [ ] Encode And Decode Strings
 - [ ] Longest Consecutive Sequence
 
 ## 2. Two Pointers
