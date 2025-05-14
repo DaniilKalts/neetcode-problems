@@ -9,7 +9,7 @@
 - [X] Group Anagrams
 - [X] Top K Frequent Elements
 - [X] Encode and Decode Strings
-- [ ] Product of Array Except Self
+- [X] Product of Array Except Self
 - [ ] Valid Sudoku
 - [ ] Longest Consecutive Sequence
 
