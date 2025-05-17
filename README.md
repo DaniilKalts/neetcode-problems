@@ -11,7 +11,7 @@
 - [X] Encode and Decode Strings
 - [X] Product of Array Except Self
 - [X] Valid Sudoku
-- [ ] Longest Consecutive Sequence
+- [X] Longest Consecutive Sequence
 
 ## 2. Two Pointers
 ### Easy
